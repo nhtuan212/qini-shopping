@@ -21,7 +21,7 @@ import React from "react";
 
 type SkeletonProps = {
     count: number;
-    itemPerRow?: number[];
+    itemPerRow?: [number, number, number];
 };
 
 export default function Skeleton({ count, itemPerRow = [4, 3, 2] }: SkeletonProps): JSX.Element {

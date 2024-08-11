@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Navbar from "../components/Navbar";
+import Navbar from "./Navbar";
 import Language from "@/components/Language";
 
 export default function Header() {

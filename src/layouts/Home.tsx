@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
+import Products from "./Products";
 import Slider from "@/components/Slider";
-import Products from "@/components/Products";
 import { slideApi } from "@/apis/slide";
 
 export default function Home() {

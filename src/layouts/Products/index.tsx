@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Skeleton from "../Skeleton";
+import Skeleton from "../../components/Skeleton";
 import { useProductStore } from "@/stores/useProductStore";
 import { formatMoney } from "@/utils";
 

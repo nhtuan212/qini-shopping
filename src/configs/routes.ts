@@ -15,6 +15,6 @@ export const router = [
             },
         ],
     },
-    { path: "/about", title: "About" },
+    // { path: "/about", title: "About" },
     { path: "/contact", title: "Contact" },
 ];

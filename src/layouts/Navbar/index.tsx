@@ -43,7 +43,10 @@ export default function Navbar() {
                             })
                         }
                     >
-                        <Link href={item.path} className="flex items-center gap-1">
+                        <Link
+                            href={!item?.children?.length ? item.path : ""}
+                            className="flex items-center gap-1"
+                        >
                             {item.title}
                             {item?.children && (
                                 <ChevronDownIcon

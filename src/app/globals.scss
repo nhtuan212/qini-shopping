@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+
+// Common
+* {
+    @apply leading-6 box-border;
+}
+
+.container {
+    @apply mx-auto px-4;
+}
+
+.card {
+    @apply flex flex-col gap-4 p-4 bg-white border rounded-md shadow-md;
+    @apply md:basis-[calc(25%-0.75rem)] basis-[calc(50%-0.75rem)];
+}
+
+// Button
+.button {
+    // Display
+    @apply relative inline-flex justify-center items-center align-middle;
+
+    // Responsive sizing
+    @apply min-w-6 min-h-6;
+    @apply sm:min-w-9 sm:min-h-9;
+
+    // Responsive spacing
+    @apply py-1 px-2;
+    @apply sm:py-2 sm:px-4;
+
+    // Background, text and ...
+    @apply bg-primary text-white text-sm;
+    @apply rounded-md cursor-pointer;
+
+    @apply hover:opacity-90 active:opacity-100;
+    @apply disabled:opacity-50 disabled:pointer-events-none;
+
+    // Button icon
+    &Icon {
+        @apply bg-transparent text-black;
+    }
+}
+
+// Input
+.input {
+    @apply flex flex-wrap gap-2;
+
+    &-group {
+        @apply flex w-full px-3 py-2 border;
+        @apply text-sm;
+        @apply rounded-md;
+        @apply shadow-sm;
+
+        & > input {
+            @apply w-full min-h-6;
+            @apply bg-transparent font-normal;
+            @apply outline-none;
+        }
+    }
+}
+
+// Error Message
+.errorMessage {
+    @apply p-1 text-xs text-error;
+}
+
+@tailwind utilities;

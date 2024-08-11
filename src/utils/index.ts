@@ -7,3 +7,7 @@ export const isEmpty = (obj: object) => {
 
     return true;
 };
+
+export const moneyFormat = (amount: number) => {
+    return amount.toLocaleString("en-US", { style: "currency", currency: "USD" });
+};

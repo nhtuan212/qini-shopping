@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Loading from "../Loading";
 import { useProductStore } from "@/stores/useProductStore";
+import { moneyFormat } from "@/utils";
 
 export default function Products() {
     //** Stores */
@@ -37,7 +38,7 @@ export default function Products() {
                                     >
                                         <Image
                                             src={product.image}
-                                            className="w-full h-full object-contain"
+                                            className="w-full h-full object-contain hover:opacity-60"
                                             alt={product.title}
                                             width={300}
                                             height={300}
@@ -48,7 +49,7 @@ export default function Products() {
                                     <h3 className="line-clamp-2">
                                         <Link href={""}>{product.title}</Link>
                                     </h3>
-                                    <p>{product.price}</p>
+                                    <p>{moneyFormat(product.price)}</p>
                                 </div>
                             </div>
                         </div>

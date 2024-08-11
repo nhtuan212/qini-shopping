@@ -21,6 +21,9 @@ const config: Config = {
                     DEFAULT: "#3b82f6",
                 },
             },
+            aspectRatio: {
+                "1/1.2": "1 / 1.2",
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
